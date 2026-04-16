@@ -1,8 +1,9 @@
+# Algorithm Time Comparison Project
 from flask import Flask, render_template, request, jsonify
 import time
 
 app = Flask(__name__)
-
+# Bubble Sort Implementation
 def bubble_sort(arr):
     start = time.time()
     n = len(arr)
@@ -11,7 +12,7 @@ def bubble_sort(arr):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return time.time() - start
-
+# Merge Sort Implementation using recursion
 def merge_sort(arr):
     start = time.time()
 
